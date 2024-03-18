@@ -4,40 +4,40 @@
 | Nome no modelo | Nome completo | Significado |
 | -------------- | ------------- | ----------- |
 |                | esp.          | Especializacao de |
-| PERSON         | Person        | Identidade pessoa |
-| STUDENT        | Student       | Identidade estudante (esp. Person) |
-| WORKER         | Worker        | Identidade trabalhador (esp. Person) |
-| TEACHER        | Teacher       | Identidade professor (esp. Worker) |
-| SUBJECT        | Subject       | Identidade materia Escolar |
-| RESPONSIBLE    | Responsible   | Identidade responsavel |
-| CLASSROOM      | Classroom     | Identidade sala de aula |
-| WORKS          | Works         | Identidade tarefa escolar |
-| JOBS           | Jobs          | Identidade trabalho escolar (esp. Works) |
-| COURT          | Court         | Identidade quadra (esp. Classroom) |
-| PROJECT        | Project       | Identidade projetos escolares |
-| STUDENT_M      | Student Managed | Identidade liderada por estudantes (esp. Project) |
-| SCHOOLAR_M     | Schoolar Managed | Identidade liderada pela escola (esp. Project) |
-| OLIMP_COMP     | Olimpic Competition | Identidade turma de competicao olimpica (esp. SCHOOLAR_M)
-| CLUBS          | Clubs        | Identidade clubes (esp. STUDENT_M) |
-| RESEARCHS      | Researchs    | Identidade pesquisas (esp. STUDENT_M) |
-| CONCIL         | Concil       | Identidade concelho estudantil (esp. STUDENT_M) |
-| DEPARTMENT     | Department   | Identidade departamento |
-| AUDITORIUM     | Auditorium   | Identidade auditorio (esp. DEPARTMENT) |
-| NURSERY        | Nursery      | Identidade enfermaria (esp. DEPARTMENT) |
-| TECHNOLOGY     | Technology   | Identidade tecnologia (esp. DEPARTMENT) |
-| LIBRARY        | Library      | Super Identidade livraria (esp. DEPARTMENT) |
-| QUEMISTRY      | Quemistry    | Identidade quimica (esp. DEPARTMENT) |
-| SPORTS         | Sports       | Identidade esporte (esp. DEPARTMENT) |
-| TRANSPORT      | Transport    | Identidade transporte |
-| VAN            | Van          | Identidade van (esp. TRANSPORT) |
-| CAR            | Car          | Identidade carro (esp. TRANSPORT) |
-| BUS            | Bus          | Identidade onibus (esp. TRANSPORT) |
-| MECS           | MECS         | Identidade SAMU (esp. VAN) |
-| DORMITORY      | Dormitory    | Identidade dormitorio |
-| BEDROOM        | Bedroom      | Identidade quarto (esp. DORMITORY) |
-| BATHROOM       | Bathroom     | Identidade banheiro (esp. DORMITORY) |
-| FEMALE         | Female       | Identidade feminino (esp. BATHROOM) |
-| TRAVELS | Travels | Identidade de viagem (esp. DEPARTMENT) |
+| PERSON         | Person        | Entidade pessoa |
+| STUDENT        | Student       | Entidade estudante (esp. Person) |
+| WORKER         | Worker        | Entidade trabalhador (esp. Person) |
+| TEACHER        | Teacher       | Entidade professor (esp. Worker) |
+| SUBJECT        | Subject       | Entidade materia Escolar |
+| RESPONSIBLE    | Responsible   | Entidade responsavel |
+| CLASSROOM      | Classroom     | Entidade sala de aula |
+| WORKS          | Works         | Entidade tarefa escolar |
+| JOBS           | Jobs          | Entidade trabalho escolar (esp. Works) |
+| COURT          | Court         | Entidade quadra (esp. Classroom) |
+| PROJECT        | Project       | Entidade projetos escolares |
+| STUDENT_M      | Student Managed | Entidade liderada por estudantes (esp. Project) |
+| SCHOOLAR_M     | Schoolar Managed | Entidade liderada pela escola (esp. Project) |
+| OLIMP_COMP     | Olimpic Competition | Entidade turma de competicao olimpica (esp. SCHOOLAR_M)
+| CLUBS          | Clubs        | Entidade clubes (esp. STUDENT_M) |
+| RESEARCHS      | Researchs    | Entidade pesquisas (esp. STUDENT_M) |
+| CONCIL         | Concil       | Entidade concelho estudantil (esp. STUDENT_M) |
+| DEPARTMENT     | Department   | Entidade departamento |
+| AUDITORIUM     | Auditorium   | Entidade auditorio (esp. DEPARTMENT) |
+| NURSERY        | Nursery      | Entidade enfermaria (esp. DEPARTMENT) |
+| TECHNOLOGY     | Technology   | Entidade tecnologia (esp. DEPARTMENT) |
+| LIBRARY        | Library      | Super Entidade livraria (esp. DEPARTMENT) |
+| QUEMISTRY      | Quemistry    | Entidade quimica (esp. DEPARTMENT) |
+| SPORTS         | Sports       | Entidade esporte (esp. DEPARTMENT) |
+| TRANSPORT      | Transport    | Entidade transporte |
+| VAN            | Van          | Entidade van (esp. TRANSPORT) |
+| CAR            | Car          | Entidade carro (esp. TRANSPORT) |
+| BUS            | Bus          | Entidade onibus (esp. TRANSPORT) |
+| MECS           | MECS         | Entidade SAMU (esp. VAN) |
+| DORMITORY      | Dormitory    | Entidade dormitorio |
+| BEDROOM        | Bedroom      | Entidade quarto (esp. DORMITORY) |
+| BATHROOM       | Bathroom     | Entidade banheiro (esp. DORMITORY) |
+| FEMALE         | Female       | Entidade feminino (esp. BATHROOM) |
+| TRAVELS | Travels | Entidade de viagem (esp. DEPARTMENT) |
 | emergence_phone | Emergence Phone | Atributo telefone de emergencia |
 | dt_birth       | Date Birth   | Atributo data de nascimento |
 | sex            | Sex          | Atributo sexo |
@@ -157,6 +157,16 @@
 | BRACKET | Bracket | Relacionamento de juntar |
 | CONTROLS | Controls | Relacionamento de controlar |
 | DRIVES | Drives | Relacionamento de dirigir |
+
+#### Motivacao para adicao das entidades:
+- DEPARTMENT: A criacao de departamentos teve como ideia inicial o desenvolvimento mais detalhado da escola, tendo como a primeira ideia a enfermaria (NURSERY), porem para englobar mais eu criei a entidade departamento (DEPARTMENT), para poder a partir desta gerar outras, como a de esporte (SPORTS), aonde a maioria dos colegios tem uma quadra, porem esta quadra normalmente e gerenciada por um professor que trabalha no departemento de esportes, tendo controle das bolas, chaves, e quaisquer aparelhos decorrentes da mesma. E a partir disso, fui me lembrando dos elementos que tinham no meu colegio para poder adicionar mais coisas.
+- PROJECT: Este e uma grande vontade minha, de implementar tanto no colegio quando nas faculdades pois eu sinto muita falta de atividades tanto extras como atividades especializadas para alguns alunos, como por exemplo, se desde o ensino medio um aluno ja gosta de fisica, e se junta a outros que tambem gostam, o que custa eles possuirem um horario para ter uma sala, e poder participar de competicoes tendo um professor como guia para tal, como por exemplo a competicao de construcao de foguete, que ja existe, Latin American Space Challenge (LASC). A participacao e capacitacao de alunos em competicoes como esta na minha visao vale muito no momento de aceitar o aluno em uma universiade ou emprego. Alem de que as competicoes olimpicas de matematica, fisica, biologia entre outras ja e uma grande pratica de multiplos colegios para poder chamar atencao para o ensino dado na sala de aula, entao nao foi uma grande complicacao pensar em algo assim.
+- DORMITORY: Para mim, o ambiente influencia muito, principalmente nos adolescentes, um ambiente em que todos juntos, estudam, fazem esportes, se divertem, realizam atividades extra-curriculares, e um ambiente mais propicio nao so do aluno estudar, mas dele ser incentivado a avancar cada vez mais em qualquer area que seja, juntamente com a criacao de projetos (PROJECT) e com a distancia minima da instituicao de ensino, com a devida divisao de quartos entre garotos e garotas. O ceu e o limite em relacao a melhora nao so individual mas tambem a melhora em grupo dos diversos alunos, as proprias competicoes saudaveis entre eles de quem tira a maior nota e um insentivo gigantesco para o desenvolvimento estudantil.
+- RESPONSIBLE: A entidade responsavel (RESPONSIBLE), representa todo e qualquer responsavel do estudante, pais, avos, tios entre outros que sejam pagantes e/ou numeros de emergencia do menor, o contato e informacao deles e importante para que haja nao so a comunicacao pais-professores, como tambem que em caso de necessidade de urgencia ou de permicao para uma excurcao, por exemplo, possa haver rapidamente esta troca de informacoes.
+- CLASSROOM: A sala e uma importantissima identidade de se ter criada, pois como os alunos saberam aonde iram estudar se nao tiverem uma sala, e se dois professores quiserem usar uma mesma sala ao mesmo tempo, sendo que uma segunda sala esta livre; E necessario que haja este controle para que situacoes como as citadas anteriormente nao ocorram. O horario (time) vinculado com a disponibilidade (availability), juntos, conseguem resolver isso.
+- TRANSPORT: O transporte mesmo foi criado diante da necessidade dos departamentos de se locomoverem, como um onibus para o time de futebol indo para outro colegio para jogar um campeonato, ou algum funcionario precisa ir para outra localidade para trabalhar em um dia especifico, ou a ambulancia a postos para na necessidade de levar o mais rapido possivel um aluno para a emergencia, sao diversas as necessidades de se ter uma entidade transporte para ser distinta e mais organizada.
+- c_wallet: Este atributo, acredito eu, que foi justamente criado, ja que com a modernidade as cada vez mais aceitas como metodo de pagamento, crypto moedas, vem entrando no mercado por conta de suas flutuacoes de inflacao funcionando diferentemente, e com suas insencoes de imposto, momento que ao nao ser rastreada nao pode ser cobrada pelo governo.
+- resume: Tanto o curriculo do aluno quando o do professor sao detalhes extremamente importantes, tanto para os responsaveis (RESPONSIBLE), que iram ter um insentivo para colocar o seu dependente na escola, vendo a transparencia, tanto para o aluno, que ao ter seu curriculo montado desde cedo podera ter o suporte para o trabalho e para os estudos muito mais rapidamente.
 
 #### Detalhamento:
 Lucro da instituicao de ensino que usufruir deste banco de dados:
