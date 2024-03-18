@@ -1,4 +1,4 @@
-## Trabalho numero 3 - Escola
+## Trabalho numero 3 - Escola - Pedro Pepeu Duarte de Freitas
 
 #### Legenda:
 | Nome no modelo | Nome completo | Significado |
